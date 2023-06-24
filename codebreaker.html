@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>Code Breaker</title>
+        <link rel="stylesheet" href="css/codebreaker.css">
+    </head>
+    <body>
+        <div class="outer">
+            <div class="inner">
+                <p>数字が全て異なる3桁の整数を入力してください。</p>
+                <input type="number" id="text1" min="000" max="999" oninput="selectnum()">
+                <button id="submit" onclick="numChk()">決定</button>
+                <span id="result1"></span>
+                <span id="remain"></span>
+                
+                <div id="mask" class="hidden">
+                    <section id="modal" class="hidden">
+                        <span id="result2"></span>
+                        <button id="retry" onclick="reTry()">再挑戦</div>
+                    </section>
+                </div>
+            </div>
+        </div>
+　      <script src="js/main.js"></script>
+    </body>
+</html>
