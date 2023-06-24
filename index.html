@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="ポートフォリオ">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>T.Oono's Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bg-animation.css">
+</head>
+<body>
+    <header>
+        <h1>T.Oono's Portfolio</h1>
+        <p>-ある駆け出しエンジニアのポートフォリオサイト-</p>
+    </header>
+    <main>
+        <div class="tab01">
+            <!--タブ部分-->
+            <input id="menu01" type="radio" name="tab_menu" checked><label class="tab_menu" for="menu01">Top</label>
+            <input id="menu02" type="radio" name="tab_menu"><label class="tab_menu" for="menu02">Profile</label>
+            <input id="menu03" type="radio" name="tab_menu"><label class="tab_menu" for="menu03">Skill</label>
+            <input id="menu04" type="radio" name="tab_menu"><label class="tab_menu" for="menu04">Stuffs</label>
+            <input id="menu05" type="radio" name="tab_menu"><label class="tab_menu" for="menu05">Link</label>
+            <!--コンテンツ部分-->
+            <div class="tab_contents" id="menu01">
+                <div class="text">
+                    ようこそおいで下さいました。<br>
+                    <br>
+                    ここはWebエンジニアを目指す私、"T.Oono"の<br>
+                    ポートフォリオサイトです。<br>
+                    <br>
+                    まだコンテンツは少ないですが、ゆっくりご覧になって下さい。<br>
+                    <br>
+                    <br>
+                    ---更新履歴---
+                </div>
+                <div class="update">
+                    2023/06/**    サイト公開。<br>
+                </div>
+            </div>
+            <div class="tab_contents" id="menu02">
+                <div class="text">
+                    京都府生まれ、京都府育ち。<br>
+                    <br>
+                    小さい頃、自宅に何故かあったPC-8800シリーズを<br>
+                    触り始めたのが自分にとっての最初のパソコン体験。<br>
+                    しかし、やるのは専らゲームで、その後Windows95、<br>
+                    Windows98と新しいパソコンに出会う中でも<br>
+                    プログラミングには一切触れることなく過ごす。<br>
+                    <br>
+                    大学時代に授業で初めてプログラミングを学び、<br>
+                    少しだけ面白さに気付くも、まだ自発的に<br>
+                    プログラミングをするには至らず。<br>
+                    <br>
+                    その後、迷走と挫折の末大学を辞め、<br>
+                    未経験で地元のIT系企業に入り、<br>
+                    業界の実情や自分のソーシャルスキルの無さに<br>
+                    泣かされつつ、運用業務を中心に経験を積む。<br>
+                    <br>
+                    現在、運用からWeb開発への転向を目指し、勉強中。<br>
+                </div>
+            </div>
+            <div class="tab_contents" id="menu03">
+                <div class="text">
+                    <h3>これまでの業務で経験してきたこと</h3>
+                    <ul>
+                        <li>Linuxベースのシステムの運用</li>
+                        <li>Oracle SQLのデータベース運用</li>
+                    </ul>
+                    <br>
+                    <h3>独学でやったこと</h3>
+                    <ul>
+                        <li>HTMLを用いた簡単なホームページ作り</li>
+                        <li>Rubyを用いた簡単なプログラム作り</li>
+                        <li>JavaScriptを用いた簡単なミニゲーム作り</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab_contents" id="menu04">
+                <div class="text">
+                    まだまだ少ないですが、学習の過程で作ったものを紹介。
+                    <div class="container">
+                        <figure>
+                            <img src="images/codebreaker.png" alt="コードブレイカー">
+                            <figcaption>コードブレイカー</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div class="tab_contents" id="menu05">
+                <div class="text">
+                    外部サイトへのリンクです。
+                    <ul id="link">
+                        <li>Qiitaのアカウント:<br><a href="#"><img src="images/logo-background-color.png" alt="Qiitaのアカウント"></a></li>
+                        <br>
+                        <li>GitHubのアカウント:<br><a href="#"><img src="images/github-mark.png" alt="GitHubのアカウント"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    <!--背景アニメーション-->
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+    </main>
+</body>
+</html>
