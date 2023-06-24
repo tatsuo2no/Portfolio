@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    font-family: Verdana, sans-serif;
+}
+
+/*ヘッダーとロゴのスタイル*/
+header {
+    display: flex;
+    padding: 30px 0;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #f0f0b4;
+    text-shadow: 0 0 10px #f0f0b4;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 30px;
+    line-height: 70px;
+}
+
+/*タブのサイズ*/
+.tab01 {
+  width: 60%;
+  margin: 15px auto 50px;
+}
+/*各タブのスタイル*/
+.tab_menu {
+  width: calc(99.1%/5);  /*タブに枠線を付ける*/
+  height: 60px;
+  line-height: 60px;
+  font-size: 16px;
+  text-align: center;
+  color: #000;
+  margin: 0 0.5px 0;
+  border-bottom: 3px solid #1f71b5;
+  background-color: #d9d9d9;
+  display: block;
+  float: left;
+  text-align: center;
+  font-weight: bold;
+  transition: all 0.2s ease;
+  border-radius: 5px 5px 0 0;
+}
+
+.tab_menu:hover {
+  opacity: 0.75;
+}
+/*ラジオボタンを全て消す*/
+input[name="tab_menu"] {
+  display: none;
+}
+/*タブ切り替えの中身のスタイル*/
+.tab_contents {
+  display: none;
+  padding: 30px;
+  height: 60%;
+  clear: both;
+  overflow: hidden;
+  background-color: #e6e6fa;
+  transition: .5s opacity;
+  box-shadow: 0 0 3px rgba(0,0,0,.2);
+  border-radius: 0 0 5px 5px;
+
+}
+/*選択されているタブを表示*/
+#menu01:checked ~ #menu01,
+#menu02:checked ~ #menu02,
+#menu03:checked ~ #menu03,
+#menu04:checked ~ #menu04,
+#menu05:checked ~ #menu05 {
+  display: block;
+  height: 600px;
+}
+/*選択されているタブのスタイル*/
+.tab01 input:checked + .tab_menu {
+  background-color: #1f71b5;
+  color: #fff;
+}
+
+/*テキストのスタイル*/
+.text, .update {
+    display: block;
+    animation: fadein-top 0.5s ease-out forwards;
+}
+
+/*Topのスクロールボックスのスタイル*/
+.update {
+  overflow: auto;
+  width: 75%;
+  height: 200px;
+  /*margin: 20px;*/
+  border: 2px dotted #777;
+  background-color: #eee;
+  line-height: 1.5em;
+}
+
+/*Skillのスタイル*/
+h3 {
+  /*text-align: center;*/
+  margin: 0;
+  font-size: 20px;
+}
+
+/*StuffのFlexboxのスタイル*/
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  margin-top: 20px;
+}
+
+.container img {
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 12px;
+}
+
+/*Linkのスタイル*/
+#link {
+  list-style-type: none; 
+}
+
+/*タブ切り替え時のアニメーション*/
+@keyframes fadein-top {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
