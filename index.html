@@ -81,10 +81,36 @@
                 <div class="text">
                     まだまだ少ないですが、学習の過程で作ったものを紹介。
                     <div class="container">
-                        <figure>
-                            <img src="images/codebreaker.png" alt="コードブレイカー">
-                            <figcaption>コードブレイカー</figcaption>
-                        </figure>
+                        <!--モーダルのコンテナ部分-->
+                        <div class="modal_wrap">
+                            <input type="radio" id="modal_open" class="modal_open-input" name="modal_trigger"/>
+                            <!--モーダルを開くボタン-->
+                            <label for="modal_open" class="modal_open-label">
+                                <figure>
+                                    <img src="images/codebreaker.png" alt="コードブレイカー">
+                                    <figcaption>コードブレイカー</figcaption>
+                                </figure>
+                            </label>
+                            <input type="radio" id="modal_close" name="modal_trigger"/>
+                            <div class="modal">
+                                <div class="modal_content-wrap">
+                                    <label for="modal_close" class="modal_close-label">×</label>
+                                    <div class="modal_content">
+                                        <img src="images/sample_cb.png" alt="コードブレイカーのサンプル画面"><br>
+                                        ヒット&ブローとも呼ばれる数当てゲームです。<br>
+                                        桁と数字の両方が一致していれば「ヒット」、<br>
+                                        数字だけが一致していれば「ブロー」になります。<br>
+                                        5回以内に正解すれば勝利となります。<br>
+                                        <br>
+                                        *JavaScriptをオンにしてプレイして下さい。
+                                        <!--新タブで開くボタンを設置-->
+                                    </div>
+                                </div>
+                                <label for="modal_close">
+                                    <div class="modal_background"></div>
+                                </label>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
