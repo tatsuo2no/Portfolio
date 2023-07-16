@@ -123,6 +123,171 @@ figcaption {
   font-size: 12px;
 }
 
+/*Stuffのモーダルウィンドウのスタイル*/
+.modal_wrap input {
+    display: none;
+}
+
+.modal_open-label,
+.modal_close-label {
+    cursor: pointer;
+}
+
+.modal_open-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    margin:0 auto;
+    padding: .8em 2em;
+    border: none;
+    border-radius: 5px;
+    background-color: #2589d0;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.modal_open-label:hover {
+    background-color: #fff;
+    color: #2589d0;
+    outline: 1px solid #2589d0;
+}
+
+.modal {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display: none;
+}
+
+.modal_open-input:checked + label + input + .modal {
+    display: block;
+    animation: modal-animation .6s;
+}
+
+/*モーダルで表示される白いウィンドウの部分*/
+.modal_content-wrap {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 650px;
+    background-color: #fefefe;
+    z-index: 2;
+    border-radius: 5px;
+}
+
+/*モーダルウィンドウ右上の×印の部分*/
+.modal_close-label {
+    background-color: #777;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    width: 36px;
+    height: 36px;
+    line-height: 1.6;
+    text-align: center;
+    display: table-cell;
+    position: fixed;
+    top: -15px;
+    right: -2%;
+    z-index: 99999;
+    font-size: 1.3em;
+}
+
+.modal_content {
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+    /*max-height: 50vh;*/
+    overflow-y: auto;
+    padding: 39px 45px 40px;
+    font-size: 14px;
+}
+
+.modal_background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .45);
+    z-index: 1;
+}
+
+@keyframes modal-animation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .modal_open-label {
+        max-width: 90%;
+        padding: .94em 2.1em .94em 2.6em;
+    }
+
+    .modal_close-label {
+        top: -17px;
+        right: -4%;
+    }
+
+    .modal_content-wrap {
+        width: 90vw;
+    }
+
+    .modal_content {
+        padding: 33px 21px 35px;
+        max-width: 100%;
+        text-align: center;
+    }
+    .modal_text {
+      display: inline-block;
+      text-align: left;
+    }
+}
+
+img {
+  align-items: center;
+}
+
+/*作品のページに飛ぶボタン*/
+.btn a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	width: 200px;
+	height: 50px;
+	color: #333;
+	font-size: 16px;
+	font-weight: 700;
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+.btn a:hover {
+	color: #f2f2f2;
+}
+
+.btn01 a {
+	background-color: #ceb849;
+	border: 1px solid #ceb849;
+}
+
+.btn01 a:hover {
+	background-color: #B99b00;
+	border: 1px solid #333;
+}
+
 /*Linkのスタイル*/
 #link {
   list-style-type: none; 
